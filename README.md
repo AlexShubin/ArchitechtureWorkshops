@@ -26,7 +26,7 @@ Here's the code of the final application that we're aiming for: https://github.c
  2. Solving UI/Logic separation problems
  3. Introducing the app state and sharing it between different scenes
  4. Introducing the app state reducer
- 5. Building and testing service layer
+ 5. Building and testing service layer using Combine
  6. Introducing side-effects and Composable Architecture
  7. Introducing Reducers composition, using Composable Architecture to modularize the app
  8. Testing the app modules
