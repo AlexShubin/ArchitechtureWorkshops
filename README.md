@@ -25,4 +25,4 @@ We'll be building a slightly modified version of Babbel's code challenge. Here's
 
 ## Setup
 
-Setup the latest version of XCode from the AppStore. Make sure you ran it at least once in order to install "Additional Components" (you'll be guided).
+Setup Xcode 11.6 (should be the latest version from the App Store). Make sure you ran it at least once in order to install "Additional Components" (you'll be guided).
