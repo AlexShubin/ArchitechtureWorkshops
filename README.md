@@ -18,7 +18,7 @@ We'll be building a slightly modified version of Babbel's code challenge. Here's
 
  ![alt-text](https://github.com/AlexShubin/ArchitechtureWorkshops/blob/master/game.gif)
 
-Here's the final app code that we're aiming for: https://github.com/AlexShubin/FallingWords2
+Here's the code of the final application that we're aiming for: https://github.com/AlexShubin/FallingWords2
  
 ### We'll go through:
 
