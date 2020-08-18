@@ -35,7 +35,7 @@ Here's the code of the final application that we're aiming for: https://github.c
 
 Setup Xcode 11.6 (should be the latest version from the App Store). Make sure you ran it at least once in order to install "Additional Components" (you'll be guided).
 
-## Workshop 1
+## Workshop #1
 
 ### Achievments
 
