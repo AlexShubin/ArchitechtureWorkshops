@@ -4,7 +4,7 @@
 
 Workshops are designed to give developers who have no experience with Swift an overview of modern iOS-apps development and share with more experienced iOS-developers knowledge about unidirectional architectures and particularly [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture).
 
-Workshops require professional programming knowledge. If you had no experience with Swift it's ok. You can drop any time they get harder. And vice versa you can join any time checking out the latest commit in this repo.
+Workshops require professional programming knowledge. If you have no experience with Swift it's okay. You can drop if at any time they get harder. And vice versa; you can join any time by checking out the latest commit in this repo.
 
 ## Workshops plan
 
