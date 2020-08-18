@@ -8,7 +8,7 @@ Workshops require professional programming knowledge. If you have no experience 
 
 ## Workshops plan
 
-We'll be building slightly modified Babbel's code challenge. Here's the app interface:
+We'll be building a slightly modified version of Babbel's code challenge. Here's the app interface:
 
  ![alt-text](https://github.com/AlexShubin/ArchitechtureWorkshops/blob/master/game.gif)
  
