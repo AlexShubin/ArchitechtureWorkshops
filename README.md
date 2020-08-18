@@ -16,7 +16,7 @@ We'll be building a slightly modified version of Babbel's code challenge. Here's
 
  1. Building a basic game app using SwiftUI
  2. Solving UI/Logic separation problems
- 3. Introducing the app state and sharing it between the different scenes
+ 3. Introducing the app state and sharing it between different scenes
  4. Introducing the app state reducer
  5. Building and testing service layer
  6. Introducing side-effects and Composable Architecture
