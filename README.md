@@ -6,6 +6,12 @@ Workshops are designed to give developers who have no experience with Swift an o
 
 Workshops require professional programming knowledge. If you have no experience with Swift it's okay. You can drop if at any time they get harder. And vice versa; you can join any time by checking out the latest commit in this repo.
 
+It would be much easier for you to follow if you have some experience in:
+ - reactive programming
+ - functional programming
+ 
+But it's not required.
+
 ## Workshops plan
 
 We'll be building a slightly modified version of Babbel's code challenge. Here's the app interface:
