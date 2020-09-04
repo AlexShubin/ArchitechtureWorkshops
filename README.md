@@ -33,4 +33,17 @@ Here's the code of the final application that we're aiming for: https://github.c
 
 ## Setup
 
-Setup Xcode 11.6 (should be the latest version from the App Store). Make sure you ran it at least once in order to install "Additional Components" (you'll be guided).
+Setup Xcode 11.7 (should be the latest version from the App Store). Make sure you ran it at least once in order to install "Additional Components" (you'll be guided).
+
+## Workshop #1
+
+[Video recording](https://drive.google.com/file/d/1k7AyQ_UbcpecMyPsmvAaa9kntW_z_5n0/view?usp=sharing)
+
+### Achievments
+
+Using SwiftUI we built a single screen game with logic and UI in the View.
+
+### Problems
+
+Game crashes at the end of the rounds. We have no game start/results screen, we have no score screen.
+We have tightly coupled UI and game logic in the view which makes it untestable.
