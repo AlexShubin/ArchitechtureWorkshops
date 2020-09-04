@@ -37,6 +37,8 @@ Setup Xcode 11.7 (should be the latest version from the App Store). Make sure yo
 
 ## Workshop #1
 
+[Video recording](https://drive.google.com/file/d/1k7AyQ_UbcpecMyPsmvAaa9kntW_z_5n0/view?usp=sharing)
+
 ### Achievments
 
 Using SwiftUI we built a single screen game with logic and UI in the View.
