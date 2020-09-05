@@ -47,3 +47,21 @@ Using SwiftUI we built a single screen game with logic and UI in the View.
 
 Game crashes at the end of the rounds. We have no game start/results screen, we have no score screen.
 We have tightly coupled UI and game logic in the view which makes it untestable.
+
+## Workshop #2
+
+[Video recording](--)
+
+### Achievments
+
+- We successfully separated UI and logic introducing `AppState` and `AppStore`
+- We made state read-only accessible for views
+- We built `GameStartView`
+- We fixed the bugs from the previous session
+
+### Problems
+
+- We still have no score screen and no `TabBar`
+- AppStore manages the concrete implementation of the state
+- `GameStartView` lacks the results section
+- Hardcoded set of words
