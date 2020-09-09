@@ -39,7 +39,7 @@ Setup Xcode 11.7 (should be the latest version from the App Store). Make sure yo
 
 [Video recording](https://drive.google.com/file/d/1k7AyQ_UbcpecMyPsmvAaa9kntW_z_5n0/view?usp=sharing)
 
-### Achievments
+### Achievements
 
 Using SwiftUI we built a single screen game with logic and UI in the View.
 
@@ -52,7 +52,7 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 
 [Video recording](https://drive.google.com/file/d/1ZUMjISg0_f3GSir5maJ0g0EJZL2GmA5W/view?usp=sharing)
 
-### Achievments
+### Achievements
 
 - We successfully separated UI and logic introducing `AppState` and `AppStore`
 - We made state read-only accessible for views
