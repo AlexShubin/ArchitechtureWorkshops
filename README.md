@@ -50,7 +50,7 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 
 ## Workshop #2
 
-[Video recording](--)
+[Video recording](https://drive.google.com/file/d/1ZUMjISg0_f3GSir5maJ0g0EJZL2GmA5W/view?usp=sharing)
 
 ### Achievments
 
