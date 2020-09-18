@@ -65,3 +65,23 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 - AppStore manages the concrete implementation of the state
 - `GameStartView` lacks the results section
 - Hardcoded set of words
+
+## Workshop #3
+
+[Video recording](...)
+
+### Achievements
+
+- Fixed the state update on the game start
+- Introduced reducer
+- Separated the architectural part from the concrete implemenation
+- Implemented the `ScoreHistoryView` and `TabBar`
+- Implemented the results section in `GameStartView`
+
+### Problems
+
+- Hardcoded set of words (side-effects)
+- Modularization problem
+- Reducer implicitly creates `Date` and `UUID`
+- `ScoreHistoryView` is responsible for formatting dates
+
