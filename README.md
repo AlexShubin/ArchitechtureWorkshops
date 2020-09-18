@@ -73,15 +73,14 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 ### Achievements
 
 - Fixed the state update on the game start
-- Introduced reducer
-- Separated the architectural part from the concrete implemenation
-- Implemented the `ScoreHistoryView` and `TabBar`
+- Introduced the reducer
+- Separated the architectural part from the concrete implementation
+- Implemented `ScoreHistoryView` and `TabBar`
 - Implemented the results section in `GameStartView`
 
 ### Problems
 
-- Hardcoded set of words (side-effects)
+- Hardcoded set of words (lack of  side-effects)
 - Modularization problem
 - Reducer implicitly creates `Date` and `UUID`
 - `ScoreHistoryView` is responsible for formatting dates
-
