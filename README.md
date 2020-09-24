@@ -79,7 +79,7 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 
 ### Problems
 
-- Hardcoded set of words (lack of  side-effects)
+- Hardcoded set of words (lack of side-effects)
 - Modularization problem
 - Reducer implicitly creates `Date` and `UUID`
 - `ScoreHistoryView` is responsible for formatting dates
@@ -87,3 +87,20 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 
 Small bugs:
  - New result appends instead of being inserted at 0 position
+
+## Workshop #4
+
+[Video recording](...)
+
+### Achievements
+
+- Fixed small bugs
+- Implemented score results section in the `GameStartView`
+- Implemented and tested service layer
+
+### Problems
+
+- Hardcoded set of words (lack of side-effects)
+- Modularization problem
+- Reducer implicitly creates `Date` and `UUID`
+- `ScoreHistoryView` is responsible for formatting dates
