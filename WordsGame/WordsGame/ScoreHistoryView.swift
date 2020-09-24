@@ -20,7 +20,7 @@ struct ScoreHistoryView: View {
                         Text("Correct answers: \(activity.results.rightAnswers)")
                         Text("Wrong answers: \(activity.results.wrongAnswers)")
                     }
-                .padding(5)
+                    .padding(5)
                 }
                 .onDelete { indexSet in
                     self.store.send(.removeActivities(indexSet: indexSet))

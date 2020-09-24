@@ -26,9 +26,10 @@ func reducer(state: inout AppState, action: AppAction) -> Void {
         }
         if state.roundNumber >= state.gameData.rounds.count - 1 {
             state.isGameStarted = false
-            state.scoreHistory.activities.append(.init(id: UUID(),
+            state.scoreHistory.activities.insert(.init(id: UUID(),
                                                        timestamp: Date(),
-                                                       results: state.gameResults))
+                                                       results: state.gameResults),
+                                                 at: 0)
         } else  {
             state.roundNumber += 1
         }
