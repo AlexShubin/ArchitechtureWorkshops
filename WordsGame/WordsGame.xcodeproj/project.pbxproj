@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17343B37251C9D78008AA403 /* StateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B36251C9D78008AA403 /* StateStore.swift */; };
+		17343B39251C9E03008AA403 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B38251C9E03008AA403 /* TabBarView.swift */; };
+		17343B3B251C9FDB008AA403 /* ScoreHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B3A251C9FDB008AA403 /* ScoreHistory.swift */; };
+		17343B3D251CA07D008AA403 /* ScoreHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */; };
 		178BC07325090B4F0057B600 /* GameStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BC07225090B4F0057B600 /* GameStartView.swift */; };
 		178BC07525090E110057B600 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BC07425090E110057B600 /* AppState.swift */; };
 		17AAB0BA25023BF4005C2C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB0B925023BF4005C2C92 /* AppDelegate.swift */; };
@@ -55,6 +59,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17343B36251C9D78008AA403 /* StateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateStore.swift; sourceTree = "<group>"; };
+		17343B38251C9E03008AA403 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		17343B3A251C9FDB008AA403 /* ScoreHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistory.swift; sourceTree = "<group>"; };
+		17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryView.swift; sourceTree = "<group>"; };
 		178BC07225090B4F0057B600 /* GameStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartView.swift; sourceTree = "<group>"; };
 		178BC07425090E110057B600 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		17AAB0B625023BF4005C2C92 /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +137,9 @@
 				17AAB0BD25023BF4005C2C92 /* GameView.swift */,
 				178BC07225090B4F0057B600 /* GameStartView.swift */,
 				178BC07425090E110057B600 /* AppState.swift */,
+				17343B36251C9D78008AA403 /* StateStore.swift */,
+				17343B38251C9E03008AA403 /* TabBarView.swift */,
+				17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */,
 				17AAB0BF25023BF5005C2C92 /* Assets.xcassets */,
 				17AAB0C425023BF5005C2C92 /* LaunchScreen.storyboard */,
 				17AAB0C725023BF5005C2C92 /* Info.plist */,
@@ -159,6 +170,7 @@
 			children = (
 				17AAB0E225023D9C005C2C92 /* CoreModels.h */,
 				17AAB0ED25023DDE005C2C92 /* GameData.swift */,
+				17343B3A251C9FDB008AA403 /* ScoreHistory.swift */,
 				17AAB0EF25024126005C2C92 /* GameResults.swift */,
 				17AAB0E325023D9C005C2C92 /* Info.plist */,
 			);
@@ -311,9 +323,12 @@
 			files = (
 				17AAB0BA25023BF4005C2C92 /* AppDelegate.swift in Sources */,
 				178BC07525090E110057B600 /* AppState.swift in Sources */,
+				17343B3D251CA07D008AA403 /* ScoreHistoryView.swift in Sources */,
+				17343B39251C9E03008AA403 /* TabBarView.swift in Sources */,
 				178BC07325090B4F0057B600 /* GameStartView.swift in Sources */,
 				17AAB0BC25023BF4005C2C92 /* SceneDelegate.swift in Sources */,
 				17AAB0BE25023BF4005C2C92 /* GameView.swift in Sources */,
+				17343B37251C9D78008AA403 /* StateStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +346,7 @@
 			files = (
 				17AAB0F025024126005C2C92 /* GameResults.swift in Sources */,
 				17AAB0EE25023DDE005C2C92 /* GameData.swift in Sources */,
+				17343B3B251C9FDB008AA403 /* ScoreHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
