@@ -76,7 +76,6 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 - Introduced the reducer
 - Separated the architectural part from the concrete implementation
 - Implemented `ScoreHistoryView` and `TabBar`
-- Implemented the results section in `GameStartView`
 
 ### Problems
 
