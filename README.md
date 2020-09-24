@@ -68,7 +68,7 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 
 ## Workshop #3
 
-[Video recording](...)
+[Video recording](https://drive.google.com/file/d/1d0lqkOJ6xzK9dsYME5QEyWQUeomgD9FZ/view?usp=sharing)
 
 ### Achievements
 
@@ -84,3 +84,7 @@ We have tightly coupled UI and game logic in the view which makes it untestable.
 - Modularization problem
 - Reducer implicitly creates `Date` and `UUID`
 - `ScoreHistoryView` is responsible for formatting dates
+- `GameStartView` lacks the results section
+
+Small bugs:
+ - New result appends instead of being inserted at 0 position
