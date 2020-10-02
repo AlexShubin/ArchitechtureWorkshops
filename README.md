@@ -90,13 +90,13 @@ Small bugs:
 
 ## Workshop #4
 
-[Video recording](...)
+[Video recording](https://drive.google.com/file/d/1fUDkhVDxeY9AxaVhgQ2ZPoUQt6XH_5yt/view?usp=sharing)
 
 ### Achievements
 
 - Fixed small bugs
-- Implemented score results section in the `GameStartView`
-- Implemented and tested service layer
+- Implemented a score results section in the `GameStartView`
+- Implemented a service layer
 
 ### Problems
 
@@ -104,3 +104,4 @@ Small bugs:
 - Modularization problem
 - Reducer implicitly creates `Date` and `UUID`
 - `ScoreHistoryView` is responsible for formatting dates
+- No tests for the service layer
