@@ -11,6 +11,12 @@
 		17343B39251C9E03008AA403 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B38251C9E03008AA403 /* TabBarView.swift */; };
 		17343B3B251C9FDB008AA403 /* ScoreHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B3A251C9FDB008AA403 /* ScoreHistory.swift */; };
 		17343B3D251CA07D008AA403 /* ScoreHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */; };
+		17561045252728E900E68596 /* ServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1756103C252728E900E68596 /* ServiceKit.framework */; };
+		1756104E252728E900E68596 /* ServiceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1756103E252728E900E68596 /* ServiceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17561051252728E900E68596 /* ServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1756103C252728E900E68596 /* ServiceKit.framework */; };
+		17561052252728E900E68596 /* ServiceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1756103C252728E900E68596 /* ServiceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1756105A2527291900E68596 /* GameDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175610592527291900E68596 /* GameDataProvider.swift */; };
+		1756105C25272DC400E68596 /* ServiceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1756105B25272DC400E68596 /* ServiceKitTests.swift */; };
 		178BC07325090B4F0057B600 /* GameStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BC07225090B4F0057B600 /* GameStartView.swift */; };
 		178BC07525090E110057B600 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BC07425090E110057B600 /* AppState.swift */; };
 		17AAB0BA25023BF4005C2C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB0B925023BF4005C2C92 /* AppDelegate.swift */; };
@@ -28,6 +34,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		17561046252728E900E68596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17AAB0AE25023BF4005C2C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1756103B252728E900E68596;
+			remoteInfo = ServiceKit;
+		};
+		17561048252728E900E68596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17AAB0AE25023BF4005C2C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17AAB0B525023BF4005C2C92;
+			remoteInfo = WordsGame;
+		};
+		1756104F252728E900E68596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17AAB0AE25023BF4005C2C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1756103B252728E900E68596;
+			remoteInfo = ServiceKit;
+		};
 		17AAB0CD25023BF5005C2C92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17AAB0AE25023BF4005C2C92 /* Project object */;
@@ -52,6 +79,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				17AAB0E825023D9C005C2C92 /* CoreModels.framework in Embed Frameworks */,
+				17561052252728E900E68596 /* ServiceKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +91,13 @@
 		17343B38251C9E03008AA403 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		17343B3A251C9FDB008AA403 /* ScoreHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistory.swift; sourceTree = "<group>"; };
 		17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryView.swift; sourceTree = "<group>"; };
+		1756103C252728E900E68596 /* ServiceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ServiceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1756103E252728E900E68596 /* ServiceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceKit.h; sourceTree = "<group>"; };
+		1756103F252728E900E68596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17561044252728E900E68596 /* ServiceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1756104D252728E900E68596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175610592527291900E68596 /* GameDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataProvider.swift; sourceTree = "<group>"; };
+		1756105B25272DC400E68596 /* ServiceKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceKitTests.swift; sourceTree = "<group>"; };
 		178BC07225090B4F0057B600 /* GameStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartView.swift; sourceTree = "<group>"; };
 		178BC07425090E110057B600 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		17AAB0B625023BF4005C2C92 /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,11 +119,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17561039252728E900E68596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17561041252728E900E68596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17561045252728E900E68596 /* ServiceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17AAB0B325023BF4005C2C92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				17AAB0E725023D9C005C2C92 /* CoreModels.framework in Frameworks */,
+				17561051252728E900E68596 /* ServiceKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +160,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1756103D252728E900E68596 /* ServiceKit */ = {
+			isa = PBXGroup;
+			children = (
+				1756103E252728E900E68596 /* ServiceKit.h */,
+				175610592527291900E68596 /* GameDataProvider.swift */,
+				1756103F252728E900E68596 /* Info.plist */,
+			);
+			path = ServiceKit;
+			sourceTree = "<group>";
+		};
+		1756104A252728E900E68596 /* ServiceKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1756105B25272DC400E68596 /* ServiceKitTests.swift */,
+				1756104D252728E900E68596 /* Info.plist */,
+			);
+			path = ServiceKitTests;
+			sourceTree = "<group>";
+		};
 		17AAB0AD25023BF4005C2C92 = {
 			isa = PBXGroup;
 			children = (
 				17AAB0B825023BF4005C2C92 /* WordsGame */,
 				17AAB0CF25023BF5005C2C92 /* WordsGameTests */,
 				17AAB0E125023D9C005C2C92 /* CoreModels */,
+				1756103D252728E900E68596 /* ServiceKit */,
+				1756104A252728E900E68596 /* ServiceKitTests */,
 				17AAB0B725023BF4005C2C92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +197,8 @@
 				17AAB0B625023BF4005C2C92 /* WordsGame.app */,
 				17AAB0CC25023BF5005C2C92 /* WordsGameTests.xctest */,
 				17AAB0E025023D9C005C2C92 /* CoreModels.framework */,
+				1756103C252728E900E68596 /* ServiceKit.framework */,
+				17561044252728E900E68596 /* ServiceKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +254,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		17561037252728E900E68596 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1756104E252728E900E68596 /* ServiceKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17AAB0DB25023D9C005C2C92 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +273,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1756103B252728E900E68596 /* ServiceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17561057252728E900E68596 /* Build configuration list for PBXNativeTarget "ServiceKit" */;
+			buildPhases = (
+				17561037252728E900E68596 /* Headers */,
+				17561038252728E900E68596 /* Sources */,
+				17561039252728E900E68596 /* Frameworks */,
+				1756103A252728E900E68596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServiceKit;
+			productName = ServiceKit;
+			productReference = 1756103C252728E900E68596 /* ServiceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17561043252728E900E68596 /* ServiceKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17561058252728E900E68596 /* Build configuration list for PBXNativeTarget "ServiceKitTests" */;
+			buildPhases = (
+				17561040252728E900E68596 /* Sources */,
+				17561041252728E900E68596 /* Frameworks */,
+				17561042252728E900E68596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17561047252728E900E68596 /* PBXTargetDependency */,
+				17561049252728E900E68596 /* PBXTargetDependency */,
+			);
+			name = ServiceKitTests;
+			productName = ServiceKitTests;
+			productReference = 17561044252728E900E68596 /* ServiceKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		17AAB0B525023BF4005C2C92 /* WordsGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17AAB0D525023BF5005C2C92 /* Build configuration list for PBXNativeTarget "WordsGame" */;
@@ -204,6 +323,7 @@
 			);
 			dependencies = (
 				17AAB0E625023D9C005C2C92 /* PBXTargetDependency */,
+				17561050252728E900E68596 /* PBXTargetDependency */,
 			);
 			name = WordsGame;
 			productName = WordsGame;
@@ -256,6 +376,15 @@
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Alex Shubin";
 				TargetAttributes = {
+					1756103B252728E900E68596 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+					17561043252728E900E68596 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+						TestTargetID = 17AAB0B525023BF4005C2C92;
+					};
 					17AAB0B525023BF4005C2C92 = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -285,11 +414,27 @@
 				17AAB0B525023BF4005C2C92 /* WordsGame */,
 				17AAB0CB25023BF5005C2C92 /* WordsGameTests */,
 				17AAB0DF25023D9C005C2C92 /* CoreModels */,
+				1756103B252728E900E68596 /* ServiceKit */,
+				17561043252728E900E68596 /* ServiceKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1756103A252728E900E68596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17561042252728E900E68596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17AAB0B425023BF4005C2C92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +462,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		17561038252728E900E68596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1756105A2527291900E68596 /* GameDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17561040252728E900E68596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1756105C25272DC400E68596 /* ServiceKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17AAB0B225023BF4005C2C92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +514,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		17561047252728E900E68596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1756103B252728E900E68596 /* ServiceKit */;
+			targetProxy = 17561046252728E900E68596 /* PBXContainerItemProxy */;
+		};
+		17561049252728E900E68596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17AAB0B525023BF4005C2C92 /* WordsGame */;
+			targetProxy = 17561048252728E900E68596 /* PBXContainerItemProxy */;
+		};
+		17561050252728E900E68596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1756103B252728E900E68596 /* ServiceKit */;
+			targetProxy = 1756104F252728E900E68596 /* PBXContainerItemProxy */;
+		};
 		17AAB0CE25023BF5005C2C92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17AAB0B525023BF4005C2C92 /* WordsGame */;
@@ -377,6 +553,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		17561053252728E900E68596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ServiceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.ServiceKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17561054252728E900E68596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ServiceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.ServiceKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17561055252728E900E68596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ServiceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.ServiceKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordsGame.app/WordsGame";
+			};
+			name = Debug;
+		};
+		17561056252728E900E68596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ServiceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.ServiceKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordsGame.app/WordsGame";
+			};
+			name = Release;
+		};
 		17AAB0D325023BF5005C2C92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,6 +903,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17561057252728E900E68596 /* Build configuration list for PBXNativeTarget "ServiceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17561053252728E900E68596 /* Debug */,
+				17561054252728E900E68596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17561058252728E900E68596 /* Build configuration list for PBXNativeTarget "ServiceKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17561055252728E900E68596 /* Debug */,
+				17561056252728E900E68596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17AAB0B125023BF4005C2C92 /* Build configuration list for PBXProject "WordsGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

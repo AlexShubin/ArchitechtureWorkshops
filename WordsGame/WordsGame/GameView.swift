@@ -1,5 +1,4 @@
 import SwiftUI
-import CoreModels
 
 struct GameView: View {
     @ObservedObject var store: AppStore
