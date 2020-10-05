@@ -9,7 +9,7 @@ public struct GameDataProvider {
                      randomNumberGenerator: GameRandomNumberGenerator) -> GameDataProvider {
         var randomNumberGenerator = randomNumberGenerator
 
-        return Self { roundsCount in
+        return GameDataProvider { roundsCount in
             translatedWordsLoader.load()
                 .map { allWords -> GameData? in
                     guard let allWords = allWords, roundsCount <= allWords.count else {
