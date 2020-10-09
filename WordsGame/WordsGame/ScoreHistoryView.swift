@@ -43,6 +43,6 @@ struct ScoreHistoryView_Previews: PreviewProvider {
                   results: .init(rightAnswers: 2, wrongAnswers: 2))
         ]
 
-        return ScoreHistoryView(store: AppStore(initialState: state, reducer: reducer))
+        return ScoreHistoryView(store: AppStore(initialState: state, reducer: reducer, environment: .live))
     }
 }
