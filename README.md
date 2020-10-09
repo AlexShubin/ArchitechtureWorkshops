@@ -108,7 +108,7 @@ Small bugs:
 
 ## Workshop #5
 
-[Video recording](...)
+[Video recording](https://drive.google.com/file/d/1oqcqs5pvUHTIQor5Qkd-JFDVnC49PbMQ/view?usp=sharing)
 
 ### Achievements
 
