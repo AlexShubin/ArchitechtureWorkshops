@@ -5,7 +5,10 @@ import CoreModels
 public struct GameDataProvider {
     public var provide: (_ roundsCount: Int) -> AnyPublisher<GameData?, Never>
 
-    static func make(translatedWordsLoader: TranslatedWordsLoader) -> GameDataProvider {
+    static func make(translatedWordsLoader: TranslatedWordsLoader,
+                     randomNumberGenerator: GameRandomNumberGenerator) -> GameDataProvider {
+        var randomNumberGenerator = randomNumberGenerator
+
         return GameDataProvider { roundsCount in
             translatedWordsLoader.load()
                 .map { allWords -> GameData? in
@@ -13,7 +16,7 @@ public struct GameDataProvider {
                         return nil
                     }
 
-                    let allWordsShuffled = allWords.shuffled()
+                    let allWordsShuffled = allWords.shuffled(using: &randomNumberGenerator)
 
                     let shuffledPrefix = Array(allWordsShuffled.prefix(roundsCount))
                     let shuffledSuffix = Array(allWordsShuffled.suffix(roundsCount))
@@ -32,13 +35,39 @@ public struct GameDataProvider {
                         }
                     }
 
-                    return GameData(rounds: result.shuffled())
+                    return GameData(rounds: result.shuffled(using: &randomNumberGenerator))
             }
             .eraseToAnyPublisher()
         }
     }
 
-    public static let live = GameDataProvider.make(translatedWordsLoader: .live)
+    public static let live = GameDataProvider.make(translatedWordsLoader: .live,
+                                                   randomNumberGenerator: .live)
+
+    #if DEBUG
+    static let mock = GameDataProvider { _ in
+        Just(GameData(rounds: [
+            .init(questionWord: "1", answerWord: "1t", isTranslationCorrect: true),
+            .init(questionWord: "2", answerWord: "2t", isTranslationCorrect: true)
+            ])).eraseToAnyPublisher()
+    }
+    #endif
+}
+
+struct GameRandomNumberGenerator: RandomNumberGenerator {
+    let random: () -> UInt64
+
+    func next() -> UInt64 {
+        random()
+    }
+
+    static let live = GameRandomNumberGenerator {
+        UInt64.random(in: 0...UInt64.max)
+    }
+
+    #if DEBUG
+    static let mock = GameRandomNumberGenerator { 1 }
+    #endif
 }
 
 struct TranslatedWordsLoader {
