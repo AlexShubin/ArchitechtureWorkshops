@@ -105,3 +105,19 @@ Small bugs:
 - Reducer implicitly creates `Date` and `UUID`
 - `ScoreHistoryView` is responsible for formatting dates
 - No tests for the service layer
+
+## Workshop #5
+
+[Video recording](https://drive.google.com/file/d/1oqcqs5pvUHTIQor5Qkd-JFDVnC49PbMQ/view?usp=sharing)
+
+### Achievements
+
+- Finished the service layer
+- Introduced side-effects
+
+### Problems
+
+- Modularization problem
+- Reducer implicitly creates `Date` and `UUID`
+- `ScoreHistoryView` is responsible for formatting dates
+- Syncronous side-effects in the reducer
