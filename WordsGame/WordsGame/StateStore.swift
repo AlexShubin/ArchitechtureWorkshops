@@ -19,17 +19,16 @@ final class Store<State, Action, Environment>: ObservableObject {
         guard let effect = reducer(&state, action, environment) else { return }
 
         var effectCancellable: AnyCancellable?
-        var didComplete = false
         effectCancellable = effect.sink(
             receiveCompletion: { [weak self] _ in
-                didComplete = true
-                guard let effectCancellable = effectCancellable else { return }
-                self?.effectCancellables.remove(effectCancellable)
+                if let effectCancellable = effectCancellable {
+                    self?.effectCancellables.remove(effectCancellable)
+                }
             },
-            receiveValue: self.send
+            receiveValue: send
         )
-        if !didComplete, let effectCancellable = effectCancellable {
-            self.effectCancellables.insert(effectCancellable)
+        if let effectCancellable = effectCancellable {
+           effectCancellables.insert(effectCancellable)
         }
     }
 }
