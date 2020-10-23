@@ -45,7 +45,7 @@ public struct GameDataProvider {
                                                    randomNumberGenerator: .live)
 
     #if DEBUG
-    static let mock = GameDataProvider { _ in
+    public static let mock = GameDataProvider { _ in
         Just(GameData(rounds: [
             .init(questionWord: "1", answerWord: "1t", isTranslationCorrect: true),
             .init(questionWord: "2", answerWord: "2t", isTranslationCorrect: true)
@@ -73,13 +73,7 @@ struct GameRandomNumberGenerator: RandomNumberGenerator {
 struct TranslatedWordsLoader {
     let load: () -> AnyPublisher<[TranslatedWord]?, Never>
 
-    private static let urlSession: URLSession = {
-        let config = URLSessionConfiguration.default
-        config.requestCachePolicy = .reloadIgnoringLocalCacheData
-        config.urlCache = nil
-
-        return URLSession(configuration: config)
-    }()
+    private static let urlSession: URLSession = .shared
 
     private static let decoder = JSONDecoder()
 

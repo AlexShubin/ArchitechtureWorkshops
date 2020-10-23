@@ -17,10 +17,10 @@ enum AppAction {
     case gameDataLoaded(GameData?)
 }
 
-func reducer(state: inout AppState, action: AppAction) -> Void {
+func reducer(state: inout AppState, action: AppAction, environment: AppEnvironment) -> Effect<AppAction>? {
     switch action {
     case .answer(let isCorrect):
-        guard let gameData = state.gameData.data else { return }
+        guard let gameData = state.gameData.data else { return nil }
 
         let isTranslationCorrect = gameData.rounds[state.roundNumber].isTranslationCorrect
         if isCorrect == isTranslationCorrect {
@@ -30,8 +30,8 @@ func reducer(state: inout AppState, action: AppAction) -> Void {
         }
         if state.roundNumber >= gameData.rounds.count - 1 {
             state.isGameStarted = false
-            state.scoreHistory.activities.insert(.init(id: UUID(),
-                                                       timestamp: Date(),
+            state.scoreHistory.activities.insert(.init(id: environment.uuidProvider(),
+                                                       timestamp: environment.dateProvider(),
                                                        results: state.gameResults),
                                                  at: 0)
         } else  {
@@ -42,7 +42,10 @@ func reducer(state: inout AppState, action: AppAction) -> Void {
         state.roundNumber = 0
         state.gameResults = .empty
         state.isGameStarted = true
-        reducer(state: &state, action: .gameDataLoaded(provide()))
+        return environment.gameDataProvider.provide(10)
+            .map { .gameDataLoaded($0) }
+            .receive(on: DispatchQueue.main)
+            .eraseToEffect()
     case .stopGame:
         state.isGameStarted = false
     case .removeActivities(let indexSet):
@@ -50,24 +53,8 @@ func reducer(state: inout AppState, action: AppAction) -> Void {
     case .gameDataLoaded(let gameData):
         state.gameData = gameData.map { .loaded($0) } ?? .failure
     }
+    return nil
 }
-
-///
-import Combine
-var cancellable: Cancellable?
-
-func provide() -> GameData? {
-    var data: GameData?
-    let sync = DispatchSemaphore(value: 0)
-    cancellable = GameDataProvider.live.provide(10)
-        .sink {
-            data = $0
-            sync.signal()
-    }
-    sync.wait()
-    return data
-}
-///
 
 extension Array {
     mutating func remove(at indexes: IndexSet) {
@@ -77,7 +64,7 @@ extension Array {
     }
 }
 
-typealias AppStore = Store<AppState, AppAction>
+typealias AppStore = Store<AppState, AppAction, AppEnvironment>
 
 enum GameDataState: Equatable {
     case loading

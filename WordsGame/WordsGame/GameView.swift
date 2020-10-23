@@ -50,6 +50,6 @@ struct GameView_Previews: PreviewProvider {
         var state = AppState()
         state.gameData = .loading
 
-        return GameView(store: AppStore(initialState: state, reducer: reducer))
+        return GameView(store: AppStore(initialState: state, reducer: reducer, environment: .live))
     }
 }

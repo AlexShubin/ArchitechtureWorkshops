@@ -31,6 +31,10 @@
 		17AAB0E825023D9C005C2C92 /* CoreModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17AAB0E025023D9C005C2C92 /* CoreModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17AAB0EE25023DDE005C2C92 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB0ED25023DDE005C2C92 /* GameData.swift */; };
 		17AAB0F025024126005C2C92 /* GameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB0EF25024126005C2C92 /* GameResults.swift */; };
+		17B7A613254302C9005D0081 /* CoreModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AAB0E025023D9C005C2C92 /* CoreModels.framework */; };
+		17B7A614254302C9005D0081 /* CoreModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17AAB0E025023D9C005C2C92 /* CoreModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17B7A6192543069F005D0081 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7A6182543069F005D0081 /* AppEnvironment.swift */; };
+		17B7A61B254307C0005D0081 /* UUID+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7A61A254307C0005D0081 /* UUID+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,13 @@
 			remoteGlobalIDString = 17AAB0DF25023D9C005C2C92;
 			remoteInfo = CoreModels;
 		};
+		17B7A615254302C9005D0081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17AAB0AE25023BF4005C2C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17AAB0DF25023D9C005C2C92;
+			remoteInfo = CoreModels;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +91,17 @@
 			files = (
 				17AAB0E825023D9C005C2C92 /* CoreModels.framework in Embed Frameworks */,
 				17561052252728E900E68596 /* ServiceKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B7A617254302C9005D0081 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				17B7A614254302C9005D0081 /* CoreModels.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +138,8 @@
 		17AAB0E325023D9C005C2C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17AAB0ED25023DDE005C2C92 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		17AAB0EF25024126005C2C92 /* GameResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResults.swift; sourceTree = "<group>"; };
+		17B7A6182543069F005D0081 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		17B7A61A254307C0005D0081 /* UUID+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B7A613254302C9005D0081 /* CoreModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +213,7 @@
 				1756103D252728E900E68596 /* ServiceKit */,
 				1756104A252728E900E68596 /* ServiceKitTests */,
 				17AAB0B725023BF4005C2C92 /* Products */,
+				17B7A612254302C9005D0081 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +237,7 @@
 				17AAB0BD25023BF4005C2C92 /* GameView.swift */,
 				178BC07225090B4F0057B600 /* GameStartView.swift */,
 				178BC07425090E110057B600 /* AppState.swift */,
+				17B7A6182543069F005D0081 /* AppEnvironment.swift */,
 				17343B36251C9D78008AA403 /* StateStore.swift */,
 				17343B38251C9E03008AA403 /* TabBarView.swift */,
 				17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */,
@@ -244,11 +271,19 @@
 			children = (
 				17AAB0E225023D9C005C2C92 /* CoreModels.h */,
 				17AAB0ED25023DDE005C2C92 /* GameData.swift */,
+				17B7A61A254307C0005D0081 /* UUID+.swift */,
 				17343B3A251C9FDB008AA403 /* ScoreHistory.swift */,
 				17AAB0EF25024126005C2C92 /* GameResults.swift */,
 				17AAB0E325023D9C005C2C92 /* Info.plist */,
 			);
 			path = CoreModels;
+			sourceTree = "<group>";
+		};
+		17B7A612254302C9005D0081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +316,12 @@
 				17561038252728E900E68596 /* Sources */,
 				17561039252728E900E68596 /* Frameworks */,
 				1756103A252728E900E68596 /* Resources */,
+				17B7A617254302C9005D0081 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				17B7A616254302C9005D0081 /* PBXTargetDependency */,
 			);
 			name = ServiceKit;
 			productName = ServiceKit;
@@ -490,6 +527,7 @@
 				17AAB0BC25023BF4005C2C92 /* SceneDelegate.swift in Sources */,
 				17AAB0BE25023BF4005C2C92 /* GameView.swift in Sources */,
 				17343B37251C9D78008AA403 /* StateStore.swift in Sources */,
+				17B7A6192543069F005D0081 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B7A61B254307C0005D0081 /* UUID+.swift in Sources */,
 				17AAB0F025024126005C2C92 /* GameResults.swift in Sources */,
 				17AAB0EE25023DDE005C2C92 /* GameData.swift in Sources */,
 				17343B3B251C9FDB008AA403 /* ScoreHistory.swift in Sources */,
@@ -538,6 +577,11 @@
 			isa = PBXTargetDependency;
 			target = 17AAB0DF25023D9C005C2C92 /* CoreModels */;
 			targetProxy = 17AAB0E525023D9C005C2C92 /* PBXContainerItemProxy */;
+		};
+		17B7A616254302C9005D0081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17AAB0DF25023D9C005C2C92 /* CoreModels */;
+			targetProxy = 17B7A615254302C9005D0081 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
