@@ -121,3 +121,18 @@ Small bugs:
 - Reducer implicitly creates `Date` and `UUID`
 - `ScoreHistoryView` is responsible for formatting dates
 - Syncronous side-effects in the reducer
+
+## Workshop #6
+
+[Video recording](https://drive.google.com/file/d/1s_SdfKruB55kGon5WcEhyycv3xKW3T08/view?usp=sharing)
+
+### Achievements
+
+- Made an overview of most popular unidirectional architectures: ReSwift, RxFeedback, Composable Architecture
+- Introduced asyncronous side effects
+- Introduced `Environment` and injected Services into the reducer
+
+### Problems
+
+- Modularization problem
+- `ScoreHistoryView` is responsible for formatting dates
