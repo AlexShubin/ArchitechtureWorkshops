@@ -136,3 +136,16 @@ Small bugs:
 
 - Modularization problem
 - `ScoreHistoryView` is responsible for formatting dates
+
+## Workshop #7
+
+[Video recording](https://drive.google.com/file/d/1gmHpMV_ZR9NIxlSwDOtilCbLBnYQLtgJ/view?usp=sharing)
+
+### Achievements
+
+- Started solving the modularization problem with Composable Architecture
+
+### Problems
+
+- Modularization problem
+- `ScoreHistoryView` is responsible for formatting dates
