@@ -136,3 +136,16 @@ Small bugs:
 
 - Modularization problem
 - `ScoreHistoryView` is responsible for formatting dates
+
+## Workshop #7
+
+[Video recording](...)
+
+### Achievements
+
+- Started solving modularization problem
+
+### Problems
+
+- Modularization problem
+- `ScoreHistoryView` is responsible for formatting dates
