@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17AAB0DF25023D9C005C2C92"
-               BuildableName = "CoreModels.framework"
-               BlueprintName = "CoreModels"
+               BlueprintIdentifier = "17C2E6A5254C49800012986D"
+               BuildableName = "GameModule.framework"
+               BlueprintName = "GameModule"
                ReferencedContainer = "container:WordsGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "17C2E6AD254C49800012986D"
+               BuildableName = "GameModuleTests.xctest"
+               BlueprintName = "GameModuleTests"
+               ReferencedContainer = "container:WordsGame.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17AAB0DF25023D9C005C2C92"
-            BuildableName = "CoreModels.framework"
-            BlueprintName = "CoreModels"
+            BlueprintIdentifier = "17C2E6A5254C49800012986D"
+            BuildableName = "GameModule.framework"
+            BlueprintName = "GameModule"
             ReferencedContainer = "container:WordsGame.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
