@@ -139,11 +139,11 @@ Small bugs:
 
 ## Workshop #7
 
-[Video recording](...)
+[Video recording](https://drive.google.com/file/d/1gmHpMV_ZR9NIxlSwDOtilCbLBnYQLtgJ/view?usp=sharing)
 
 ### Achievements
 
-- Started solving modularization problem
+- Started solving the modularization problem with Composable Architecture
 
 ### Problems
 
