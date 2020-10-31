@@ -11,6 +11,20 @@ public struct ModuleState: Equatable {
     public var roundNumber = 0
     public var isGameStarted = false
     public var scoreHistory = ScoreHistory.empty
+    
+    public init(
+        gameData: GameDataState = .loading,
+        gameResults:GameResults = .empty,
+        roundNumber: Int = 0,
+        isGameStarted: Bool = false,
+        scoreHistory: ScoreHistory = .empty
+    ) {
+        self.gameData = gameData
+        self.gameResults = gameResults
+        self.roundNumber = roundNumber
+        self.isGameStarted = isGameStarted
+        self.scoreHistory = scoreHistory
+    }
 }
 
 public enum ModuleAction: Equatable {

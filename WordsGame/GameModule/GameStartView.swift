@@ -1,10 +1,14 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct GameStartView: View {
+public struct GameStartView: View {
     let store: ModuleStore
 
-    var body: some View {
+    public init(store: ModuleStore) {
+        self.store = store
+    }
+    
+    public var body: some View {
         WithViewStore(store) { viewStore in
             VStack(spacing: 10) {
                 Button(action: { viewStore.send(.startGame) },
