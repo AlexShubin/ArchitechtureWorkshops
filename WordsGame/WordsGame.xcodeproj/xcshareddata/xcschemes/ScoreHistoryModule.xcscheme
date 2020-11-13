@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17AAB0B525023BF4005C2C92"
-               BuildableName = "WordsGame.app"
-               BlueprintName = "WordsGame"
+               BlueprintIdentifier = "17B8D55B255EBDA3003BE4E0"
+               BuildableName = "ScoreHistoryModule.framework"
+               BlueprintName = "ScoreHistoryModule"
                ReferencedContainer = "container:WordsGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17561043252728E900E68596"
-               BuildableName = "ServiceKitTests.xctest"
-               BlueprintName = "ServiceKitTests"
-               ReferencedContainer = "container:WordsGame.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17C2E6AD254C49800012986D"
-               BuildableName = "GameModuleTests.xctest"
-               BlueprintName = "GameModuleTests"
-               ReferencedContainer = "container:WordsGame.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -71,16 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17AAB0B525023BF4005C2C92"
-            BuildableName = "WordsGame.app"
-            BlueprintName = "WordsGame"
-            ReferencedContainer = "container:WordsGame.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -88,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17AAB0B525023BF4005C2C92"
-            BuildableName = "WordsGame.app"
-            BlueprintName = "WordsGame"
+            BlueprintIdentifier = "17B8D55B255EBDA3003BE4E0"
+            BuildableName = "ScoreHistoryModule.framework"
+            BlueprintName = "ScoreHistoryModule"
             ReferencedContainer = "container:WordsGame.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

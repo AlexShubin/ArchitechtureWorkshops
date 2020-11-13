@@ -1,16 +1,20 @@
 import SwiftUI
+import GameModule
+import ScoreHistoryModule
 
 struct TabBarView: View {
-    @ObservedObject var store: AppStore
+    let store: AppStore
 
     var body: some View {
         TabView {
-            GameStartView(store: store)
+            GameStartView(store: store.scope(state: { $0.gameModuleState },
+                                             action: { .gameModule($0) }))
                 .tabItem {
                     Image.game
                     Text("Game")
             }
-            ScoreHistoryView(store: store)
+            ScoreHistoryView(store: store.scope(state: { $0.scoreHistoryModuleState },
+                                             action: { .scoreHistoryModule($0) }))
                 .tabItem {
                     Image.list
                     Text("Score")

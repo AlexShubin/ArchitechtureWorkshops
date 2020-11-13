@@ -1,8 +1,13 @@
 import SwiftUI
+import ComposableArchitecture
 
-struct ScoreHistoryView: View {
-    @ObservedObject var store: AppStore
-
+public struct ScoreHistoryView: View {
+    let store: ModuleStore
+    
+    public init(store: ModuleStore) {
+        self.store = store
+    }
+    
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -10,10 +15,11 @@ struct ScoreHistoryView: View {
         return formatter
     }()
 
-    var body: some View {
+    public var body: some View {
+        WithViewStore(store) { viewStore in
         NavigationView {
             List {
-                ForEach(store.state.scoreHistory.activities) { activity in
+                ForEach(viewStore.state.scoreHistory.activities) { activity in
                     VStack {
                         Text("Completed at: \(self.dateFormatter.string(from: activity.timestamp))")
                             .foregroundColor(.blue)
@@ -23,17 +29,18 @@ struct ScoreHistoryView: View {
                 .padding(5)
                 }
                 .onDelete { indexSet in
-                    self.store.send(.removeActivities(indexSet: indexSet))
+                    viewStore.send(.removeActivities(indexSet: indexSet))
                 }
             }
             .navigationBarTitle(Text("Score"))
         }
     }
+    }
 }
 
 struct ScoreHistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        var state = AppState()
+        var state = ModuleState()
         state.scoreHistory.activities = [
             .init(id: UUID(),
                   timestamp: Date(timeIntervalSinceNow: 10),
@@ -43,6 +50,6 @@ struct ScoreHistoryView_Previews: PreviewProvider {
                   results: .init(rightAnswers: 2, wrongAnswers: 2))
         ]
 
-        return ScoreHistoryView(store: AppStore(initialState: state, reducer: reducer, environment: .live))
+        return ScoreHistoryView(store: ModuleStore(initialState: state, reducer: reducer, environment: ()))
     }
 }

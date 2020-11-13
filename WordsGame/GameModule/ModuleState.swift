@@ -6,11 +6,25 @@ public typealias ModuleStore = Store<ModuleState, ModuleAction>
 public typealias ModuleEffect = Effect<ModuleAction, Never>
 
 public struct ModuleState: Equatable {
-    public var gameData = GameDataState.loading
-    public var gameResults = GameResults.empty
-    public var roundNumber = 0
-    public var isGameStarted = false
-    public var scoreHistory = ScoreHistory.empty
+    public var gameData:GameDataState
+    public var gameResults: GameResults
+    public var roundNumber: Int
+    public var isGameStarted: Bool
+    public var scoreHistory: ScoreHistory
+    
+    public init(
+        gameData: GameDataState = .loading,
+        gameResults:GameResults = .empty,
+        roundNumber: Int = 0,
+        isGameStarted: Bool = false,
+        scoreHistory: ScoreHistory = .empty
+    ) {
+        self.gameData = gameData
+        self.gameResults = gameResults
+        self.roundNumber = roundNumber
+        self.isGameStarted = isGameStarted
+        self.scoreHistory = scoreHistory
+    }
 }
 
 public enum ModuleAction: Equatable {
