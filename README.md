@@ -149,3 +149,16 @@ Small bugs:
 
 - Modularization problem
 - `ScoreHistoryView` is responsible for formatting dates
+
+## Workshop #8
+
+[Video recording](https://drive.google.com/file/d/1mhZuKPsfctTSPxked9kuXcJ0r2V0EGDV/view?usp=sharing)
+
+### Achievements
+
+- Using Composable Architecture for every module in the app
+
+### Problems
+
+- `ScoreHistoryView` is responsible for formatting dates
+- `StartGameView` receives unnecessary updates
