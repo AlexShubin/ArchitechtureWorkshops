@@ -4,8 +4,7 @@ struct GameStartViewState: Equatable {
     let isGameStarted: Bool
     let latestActivity: Activity?
 
-    struct Activity: Identifiable, Equatable {
-        let id: UUID
+    struct Activity: Equatable {
         let rightAnswers: Int
         let wrongAnswers: Int
     }
@@ -26,8 +25,7 @@ struct GameStartViewStateConverter {
 
 private extension GameStartViewState.Activity {
     init(from scoreHistoryActivity: ScoreHistory.Activity) {
-        self.init(id: scoreHistoryActivity.id,
-                  rightAnswers: scoreHistoryActivity.results.rightAnswers,
+        self.init(rightAnswers: scoreHistoryActivity.results.rightAnswers,
                   wrongAnswers: scoreHistoryActivity.results.wrongAnswers)
     }
 }
