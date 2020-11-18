@@ -59,6 +59,16 @@
                ReferencedContainer = "container:WordsGame.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "17AAB0CB25023BF5005C2C92"
+               BuildableName = "WordsGameTests.xctest"
+               BlueprintName = "WordsGameTests"
+               ReferencedContainer = "container:WordsGame.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -20,6 +20,9 @@
 		17561052252728E900E68596 /* ServiceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1756103C252728E900E68596 /* ServiceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1756105A2527291900E68596 /* GameDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175610592527291900E68596 /* GameDataProvider.swift */; };
 		1756105C25272DC400E68596 /* GameDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1756105B25272DC400E68596 /* GameDataProviderTests.swift */; };
+		178B42812565885D00800A19 /* GameStartViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178B42802565885D00800A19 /* GameStartViewState.swift */; };
+		178B428825658AE200800A19 /* ScoreHistoryViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178B428725658AE200800A19 /* ScoreHistoryViewState.swift */; };
+		178B428F25658F7400800A19 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178B428E25658F7400800A19 /* DateFormatter.swift */; };
 		178BC07525090E110057B600 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BC07425090E110057B600 /* AppState.swift */; };
 		17AAB0BA25023BF4005C2C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB0B925023BF4005C2C92 /* AppDelegate.swift */; };
 		17AAB0BC25023BF4005C2C92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB0BB25023BF4005C2C92 /* SceneDelegate.swift */; };
@@ -214,6 +217,9 @@
 		1756104D252728E900E68596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175610592527291900E68596 /* GameDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataProvider.swift; sourceTree = "<group>"; };
 		1756105B25272DC400E68596 /* GameDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataProviderTests.swift; sourceTree = "<group>"; };
+		178B42802565885D00800A19 /* GameStartViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewState.swift; sourceTree = "<group>"; };
+		178B428725658AE200800A19 /* ScoreHistoryViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryViewState.swift; sourceTree = "<group>"; };
+		178B428E25658F7400800A19 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		178BC07225090B4F0057B600 /* GameStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartView.swift; sourceTree = "<group>"; };
 		178BC07425090E110057B600 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		17AAB0B625023BF4005C2C92 /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -439,6 +445,8 @@
 				17B8D55E255EBDA3003BE4E0 /* ScoreHistoryModule.h */,
 				1743C96B255EBDE7005A0AA4 /* ModuleState.swift */,
 				17343B3C251CA07D008AA403 /* ScoreHistoryView.swift */,
+				178B428725658AE200800A19 /* ScoreHistoryViewState.swift */,
+				178B428E25658F7400800A19 /* DateFormatter.swift */,
 				17B8D55F255EBDA3003BE4E0 /* Info.plist */,
 			);
 			path = ScoreHistoryModule;
@@ -461,6 +469,7 @@
 				17C2E6D4254C49C70012986D /* ModuleState.swift */,
 				17B7A6182543069F005D0081 /* ModuleEnvironment.swift */,
 				178BC07225090B4F0057B600 /* GameStartView.swift */,
+				178B42802565885D00800A19 /* GameStartViewState.swift */,
 				17C2E6A9254C49800012986D /* Info.plist */,
 			);
 			path = GameModule;
@@ -886,6 +895,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178B428F25658F7400800A19 /* DateFormatter.swift in Sources */,
+				178B428825658AE200800A19 /* ScoreHistoryViewState.swift in Sources */,
 				1743C979255EBE15005A0AA4 /* ScoreHistoryView.swift in Sources */,
 				1743C96C255EBDE7005A0AA4 /* ModuleState.swift in Sources */,
 			);
@@ -907,6 +918,7 @@
 				17C2E6DB254C49D90012986D /* ModuleEnvironment.swift in Sources */,
 				17C2E6C8254C49AA0012986D /* GameView.swift in Sources */,
 				17C2E6CE254C49BA0012986D /* GameStartView.swift in Sources */,
+				178B42812565885D00800A19 /* GameStartViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,7 +1271,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WordsGameTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1280,7 +1292,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WordsGameTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
