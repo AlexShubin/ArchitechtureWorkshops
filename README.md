@@ -162,3 +162,9 @@ Small bugs:
 
 - `ScoreHistoryView` is responsible for formatting dates
 - `StartGameView` receives unnecessary updates
+
+## Workshop #9
+
+[Video recording](https://drive.google.com/file/d/1XZYSoOVNg2XpunZgXjSAzMTTsPuSQvtb/view?usp=sharing)
+
+Tackling final problems and final thoughts.
