@@ -3,38 +3,32 @@ import ComposableArchitecture
 
 public struct ScoreHistoryView: View {
     let store: ModuleStore
+    let viewStateConverter: ScoreHistoryViewStateConverter = .live
     
     public init(store: ModuleStore) {
         self.store = store
     }
-    
-    private let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
-        return formatter
-    }()
 
     public var body: some View {
-        WithViewStore(store) { viewStore in
-        NavigationView {
-            List {
-                ForEach(viewStore.state.scoreHistory.activities) { activity in
-                    VStack {
-                        Text("Completed at: \(self.dateFormatter.string(from: activity.timestamp))")
-                            .foregroundColor(.blue)
-                        Text("Correct answers: \(activity.results.rightAnswers)")
-                        Text("Wrong answers: \(activity.results.wrongAnswers)")
+        WithViewStore(store.scope(state: viewStateConverter.convert)) { viewStore in
+            NavigationView {
+                List {
+                    ForEach(viewStore.activities) { activity in
+                        VStack {
+                            Text("Completed at: \(activity.time))")
+                                .foregroundColor(.blue)
+                            Text("Correct answers: \(activity.rightAnswers)")
+                            Text("Wrong answers: \(activity.wrongAnswers)")
+                        }
+                        .padding(5)
                     }
-                .padding(5)
+                    .onDelete { indexSet in
+                        viewStore.send(.removeActivities(indexSet: indexSet))
+                    }
                 }
-                .onDelete { indexSet in
-                    viewStore.send(.removeActivities(indexSet: indexSet))
-                }
+                .navigationBarTitle(Text("Score"))
             }
-            .navigationBarTitle(Text("Score"))
         }
-    }
     }
 }
 

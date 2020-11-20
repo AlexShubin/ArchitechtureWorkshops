@@ -3,13 +3,14 @@ import ComposableArchitecture
 
 public struct GameStartView: View {
     let store: ModuleStore
+    let viewStateConverter = GameStartViewStateConverter.live
     
     public init(store: ModuleStore) {
         self.store = store
     }
 
     public var body: some View {
-        WithViewStore(store) { viewStore in
+        WithViewStore(store.scope(state: viewStateConverter.convert)) { viewStore in
             VStack(spacing: 10) {
                 Button(action: { viewStore.send(.startGame) },
                        label: { Text("Start game") })
@@ -24,16 +25,16 @@ public struct GameStartView: View {
     
     private var results: AnyView {
         AnyView(
-            WithViewStore(store) { viewStore -> AnyView in
-                guard let gameResults = viewStore.state.scoreHistory.activities.first?.results else {
+            WithViewStore(store.scope(state: viewStateConverter.convert)) { viewStore -> AnyView in
+                guard let latestActivity = viewStore.latestActivity else {
                     return AnyView(EmptyView())
                 }
                 return AnyView(
                     VStack(spacing: 10) {
                         Text("Your latest result: ")
                             .font(.title)
-                        Text("Correct answers: \(gameResults.rightAnswers)")
-                        Text("Wrong answers: \(gameResults.wrongAnswers)")
+                        Text("Correct answers: \(latestActivity.rightAnswers)")
+                        Text("Wrong answers: \(latestActivity.wrongAnswers)")
                     }
                     .font(.headline)
                 )
